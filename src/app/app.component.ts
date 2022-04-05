@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Suma } from './Entidades/suma';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Login';
+  miTipo = 'text';
+  misuma:Suma;
+
+  constructor(){
+    this.title = "";
+    this.misuma = new Suma();
+  }
 }
+
